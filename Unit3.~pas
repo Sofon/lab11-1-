@@ -1,0 +1,47 @@
+unit Unit3;
+
+interface
+uses Unit2;
+var DeqStart, DeqEnd, DeqStart2, DeqEnd2, DeqStart3,DeqEnd3: PElem; names: array [0..9] of string;
+implementation
+
+
+initialization
+  DeqStart:=nil;
+  DeqEnd:=nil;
+
+  DeqStart2:=nil;
+  DeqEnd2:=nil;
+
+  DeqStart3:=nil;
+  DeqEnd3:=nil;
+
+
+  names[0]:='Глотов';
+  names[1]:='Данилин';
+  names[2]:='Зайдес';
+  names[3]:='Бурова';
+  names[4]:='Ковалев';
+  names[5]:='Мамаев';
+  names[6]:='Баранов';
+  names[7]:='Юрьев';
+  names[8]:='Кургускин';
+  names[9]:='Травников';
+  names[10]:='Луковцев';
+  names[11]:='Половников';
+  names[12]:='Попов';
+  names[13]:='Маркова';
+  names[14]:='Макаров';
+  names[15]:='Осипов';
+  names[16]:='Пашинцев';
+  names[17]:='Никишин';
+  names[18]:='Климов';
+  names[19]:='Луковцев';
+
+finalization
+  FreeList(DeqStart,DeqEnd);
+  FreeList(DeqStart2,DeqEnd2);
+  FreeList(DeqStart3,DeqEnd3);
+end.
+
+
